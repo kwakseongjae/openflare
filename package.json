@@ -1,0 +1,55 @@
+{
+  "name": "openflare",
+  "version": "0.3.0",
+  "description": "OpenFlare: OpenAPI-based frontend toolkit",
+  "type": "module",
+  "main": "dist/openflare.cjs.js",
+  "module": "dist/openflare.esm.js",
+  "browser": "dist/openflare.umd.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md}'",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "openapi",
+    "api-documentation",
+    "react",
+    "typescript",
+    "toolkit"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kwakseongjae/openflare.git"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-yaml": "^4.0.0",
+    "@types/js-yaml": "^4.0.5",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.0",
+    "rollup": "^4.29.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.3.0"
+  }
+}
